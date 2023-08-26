@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .zcaption3 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .zheader {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: min-content;
+      background-color: #ced1c9;
+    }
+
+    .zheader h2 {
+      text-align: center;
+    }
+
+    .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #ef9709;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: #04AA6D;
+      width: 0%;
+    }
+
+    .zcontent {
+      padding: 100px 0;
+      margin: 50px auto 0 auto;
+      width: 80%;
+
+    }
+
+    .zp2 {
+      color: rgb(141, 138, 138);
+      font-size: small;
+      text-align: left;
+    }
+
+    .zimg2 {
+      clip-path: circle(54px);
+      align-content: center;
+      position: relative;
+      width: 135px;
+      display: ruby;
+      margin: 10% 80% 0% 0%;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="zheader">
+    <h2>TESTIMONIALS</h2>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <div class="zcontent">
+    <div class="mcontainer1">
+      <div class="zcaption3">
+        <div>
+          <img src="chef ramzi.jpeg" class="zimg2">
+        </div>
+        <div>
+          <p><b>Ramzi Choueiri Lebanese Chef</b></p>
+          <p class="zp2">Winner of 4 Guinness
+            World Records<br>
+            and the prestigious Lebanese Presidential Medal of Merit
+          </p>
+        </div>
+      </div>
+      <p class="mtxt2">
+        "Far far away, behind the word mountains, far from the countries Vokalia and
+        Consonantia,there
+        live the blind texts.
+        Seperated they live in bookmarksgrove right at the coast of Semantics, a large
+        language ocean.Far far away, behind the word mountains, far from the countries Vokalia
+        and Consonantia, there
+        live the blind texts.
+        Seperated they live in bookmarksgrove right at the coast of Semantics, a large
+        language ocean."<br> <br> <br>
+      </p>
+    </div>
+    <div>
+    
+      <div>
+        <div class="zcaption3">
+          <div> <img src="./images/MireilleHayek..jpeg" class="zimg2"></div>
+          <div><br><br/>
+         <p><b>Mireille Hayek Leb. Entrepreneur</b></p>
+          <p class="zp2">Founder of Em Sherif Int'l Brand
+            <br>and owner of many chains around the World.
+          </p>
+        </div>
+      </div>
+      <p class="mtxt2">
+        Hayek has passion about the special lebanese menu.
+        “Authenticity lies at the heart of the heart. We are offered a full Lebanese experience : lebanese music,
+        culture and
+        traditional food. We hope to be soon in many cities like London and Monaco.”
+        She added that Lebanese cuisine is rich because of the variety of ingredients available and the balance of
+        flavors. “The Mediterranean diet is very healthy and trendy. Sumac, garlic, olive oil and sesame paste are just
+        a few of the nutritious components.”
+      </p>
+    </div>
+    <br><br>
+       
+    <div>
+      <div class="zcaption3">
+        <div> <img src="./images/YoussefAkiki.jpg" class="zimg2"></div>
+        <div><br><br/>
+       <p><b>Youssef Akiki Leb. Food Manager</b></p>
+        <p class="zp2">Founder of  Brut restaurant  
+          <br>and  Chief Manager"
+        </p>
+      </div>
+    </div>
+    <p class="mtxt2">
+      He has passion about the special lebanese menu.
+      “Authenticity lies at the heart of the heart. We are offered a full Lebanese experience : lebanese music,
+      culture and
+      traditional food. We hope to be soon in many cities like London and Monaco.”
+      She added that Lebanese cuisine is rich because of the variety of ingredients available and the balance of
+      flavors. “The Mediterranean diet is very healthy and trendy. Sumac, garlic, olive oil and sesame paste are just
+      a few of the nutritious components.”
+    </p>
+  </div>
+
+
+  </div>
+
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
+</body>
+
+</html>
