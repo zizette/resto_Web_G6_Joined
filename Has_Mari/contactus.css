@@ -25,7 +25,7 @@
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
     text-align: center;
 
-    animation: changebg 15s ease-in-out infinite alternate;
+    animation: changebg 10s ease-in-out infinite alternate;
 
 
 
@@ -553,10 +553,10 @@ body {
 }
 
 
-input[type=text],
+input[type='text'],
 select,
 textarea,
-input[type=email] {
+input[type='email'] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ce9d72;
@@ -568,7 +568,7 @@ input[type=email] {
     background-color: #f3e5da;
 }
 
-input[type=submit] {
+input[type='submit'] {
     background-color: #ca740a;
     color: rgb(255, 255, 255);
     padding: 12px 20px;
@@ -577,7 +577,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type='submit']:hover {
     background-color: #ca740a;
 }
 
@@ -588,6 +588,7 @@ input[type=submit]:hover {
     overflow: hidden;
     align-items: flex-start;
     justify-content: center;
+    width:100vw;
    
 
 
