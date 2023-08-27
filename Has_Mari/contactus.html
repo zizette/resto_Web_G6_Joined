@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="contactus.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="../A-Footer-style.css">
 </head>
 
 <body>
@@ -24,29 +23,19 @@
 
                 </nav>
                 <button class="hamburger">
-                    <span class="material-icons">menu</span>
                 </button>
-                <button class="h_contactus">Contact us</button>
+
 
             </nav>
-            <div class="h_mobile-menu">
-                <a href="../index.html">Home</a>
-                <a href="#">Recipes</a>
-                <a href="#">Services</a>
-                <a href="../Aya_Folder/aboutus.html">About</a>
-                <a href="#">News</a>
-                <a href="h_contactus">Contact Us</a>
-            </div>
+
             <p class="h_banner">
                 Contact Us
             </p>
             <p class="h_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, et. Totam, aliquid ipsum quo
+                "Share Your Vision, We'll Bring it to Life."
             </p>
 
-            <div style="text-align: center; ">
-                <button class="h_getstarted">Get started</button>
-            </div>
+
         </div>
 
         <div class="h_bg2">
@@ -54,25 +43,24 @@
 
                 <div class="h_grid-item">
 
-                    <div class="h_bgdiv"><img src="mimages/party.jpg" class="h_svgitem"></div>
+                    <div class="h_bgdiv"><img src="mimages/cake1.jpg" class="h_svgitem"></div>
                     <p class="h_titletext">
-                        Enjoy Eating
+                        Birthdays
                     </p>
-                    <p class="h_iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita?
-                        Temporibus repellendus repellat.
+                    <p class="h_iconstext">For an unforgettable birthday contact us now and book a special one.
                     </p>
 
                 </div>
                 <div class="h_grid-item">
 
 
-                    <div class="h_bgdiv"><img src="mimages/cake1.jpg" class="h_svgitem">
+                    <div class="h_bgdiv"><img src="./mimages/play.jpg" class="h_svgitem">
                     </div>
                     <p class="h_titletext">
-                        Fresh Sea Foods
+                        kids playground
                     </p>
-                    <p class="h_iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, expedita?
-                        Temporibus repellendus repellat.
+                    <p class="h_iconstext">We care about your kids experience too. We're here to help them enjoy an
+                        amazing evening in our playground.
                     </p>
 
 
@@ -81,27 +69,27 @@
 
 
                     <!-- <svg></svg> -->
-                    <div class="h_bgdiv"><img src="mimages/grad.jpg" class="h_svgitem">
+                    <div class="h_bgdiv"><img src="./mimages/party.jpg" class="h_svgitem">
                     </div>
                     <p class="h_titletext">
-                        Cup Of Coffees
+                        parties
                     </p>
-                    <p class="h_iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-                        expedita?
-                        Temporibus repellendus repellat.
+                    <p class="h_iconstext">an unforgettable night of laughter at our lively party.
+                        With music, dancing, and great
+                        company waiting for you. Don't miss out on the fun!
                     </p>
                 </div>
 
                 <div class="h_grid-item">
 
-                    <div class="h_bgdiv"> <img src="mimages/play.jpg" class="h_svgitem">
+                    <div class="h_bgdiv"> <img src="./mimages/grad.jpg" class="h_svgitem">
                     </div>
                     <p class="h_titletext">
-                        Meat Eaters
+                        Graduation
                     </p>
-                    <p class="h_iconstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-                        expedita?
-                        Temporibus repellendus repellat.
+                    <p class="h_iconstext">for an evening filled with joy, inspiration, and proud moments. Let's raise a
+                        toast to
+                        success and new beginnings together!
                     </p>
                 </div>
 
@@ -117,9 +105,10 @@
         <div class="contact-form">
             <h3>Contact Form</h3>
             <div class="container">
-                <form action="/action_page.php">
+                <form action="/action_page.php" onsubmit="onSubmitForm()">
+
                     <label for="name"> Name</label>
-                    <input type="text" id="lname" name="lname" placeholder="Your name..">
+                    <input type="text" id="name" name="name" placeholder="Your name..">
 
                     <label for="phone">Phone Number</label>
                     <input type="text" id="phonenb" name="phone" placeholder="Your phone number">
@@ -127,9 +116,8 @@
                     <label for="subject">What's on your mind?</label>
                     <textarea id="subject" name="subject" placeholder="tell us.." style="height:200px"></textarea>
 
+                    <input type="submit" value="Submit">
                 </form>
-                <button class="h_contactus" type="submit" value="Submit" onclick="thank_CUS(lname)"> S U B M I T
-                </button>
             </div>
         </div>
         <div class="slideshow-container">
@@ -147,7 +135,7 @@
             <div class="mySlides fade">
                 <img src="./mimages/cake1.jpg" class="size">
             </div>
-            <div style="text-align:center">
+            <div class="dots" style="text-align:center; ">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -166,7 +154,8 @@
             Impedit minima dolor necessitatibus veritatis quos voluptates! Tempora,
             vel accusantium. </p>
 
-        <form class="a_form">
+        <form class="a_form" id="subscribeForm">
+
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
             <button type="submit" id="button">SUBSCRIBE</button>
         </form>
@@ -182,24 +171,18 @@
                 inventore quaerat voluptatum facilis!
             </p>
 
-            <p> <a href="https://twitter.com/home" target="_blank"><img class="A-imgs" src="./images/twiter.png"></a>
-                <a href="https://facebook.com/zizettechamaa/" target=”_blank”><img class="A-imgs" src="./images/fb.png"
-                        alt=""></a>
-                <a href="https://linkdln/" target="_blank"><img class="A-imgs" src="./images/in.png" alt=""></a>
-                <a href="https://instagram.com/zizettechamaa" target="_blank"><img class="A-imgs"
-                        src="./images/insta.png" alt=""></a>
+            <p> <img class="imgs" src="../images/twiter.png" alt="">
+                <img class="imgs" src="../images/fb.png" alt="">
+                <img class="imgs" src="../images/in.png" alt="">
+                <img class="imgs" src="../images/insta.png" alt="">
             </p>
-
         </div>
-
         <div class="Opening-Contact-Container">
-
             <div class="Opening-Container">
                 <b>Opening Hours</b>
                 <p> Sunday-Thursday <br />
                     5AM-10PM </p>
             </div>
-
             <div class="Contactinfo-Container">
                 <b> Contact Info </b>
                 <p> Address: <br />
@@ -216,12 +199,12 @@
         </div>
 
         <div class="Quick-Container">
-            </b> <b> Quick Links </b> <br />
+            <b> Quick Links </b> <br />
             <p>
                 <a href="../Aya_Folder/aboutus.html">About</a>
                 <a href="">Terms Of use </a>
                 <a href="">Disclaimers </a>
-                <a href="../Has_Mari/contactus.html"> Contact </a>
+                <a href=""> Contact </a>
             </p>
         </div>
 
@@ -231,10 +214,9 @@
 
 
     </footer>
-    <script src="mobile.js"></script>
     <script src="../A-Subscribe.js"></script>
-    <script src="Z-contactus.js"></script>
-    <!-- <script src=""></script> -->
+    <script src="../A-Footer-style.css"></script>
+    <script src="mobile.js"></script>
 </body>
 <script>
     let slideIndex = 0;
@@ -256,6 +238,29 @@
         dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
+
+
+
+    function onSubmitForm() {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Get the values from the form fields
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phonenb").value;
+        var subject = document.getElementById("subject").value;
+
+        // Display a thank you message
+        alert("Thank you, " + name + ", for submitting your request!\nWe'll get in touch with you at " + phone + " regarding: " + subject);
+    }
+
+
+
+    //footer script 
+    document.getElementById("subscribeForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+        alert("Thank you for subscribing!");
+    });
 </script>
 
 </html>
